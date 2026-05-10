@@ -1,8 +1,10 @@
-# JarvisClaw — Local Voice Assistant for macOS
+# JarvisClaw — Local Voice Assistant for OpenClaw agent
 
-Jarvis is a local macOS assistant that connects to your OpenClaw agent and gives it voice input, voice output, a 3D animated orb UI, and an always-on wake word listener.
+Jarvis is a local assistant that connects to your OpenClaw agent and gives it voice input, voice output, a 3D animated orb UI, and an always-on wake word listener.
 
 Think of it as the interface layer — **OpenClaw is the brain, Jarvis is the face and voice.**
+
+Built for mac-os but can also be run on windows with slightly less functionality.
 
 ## Architecture
 
@@ -111,7 +113,7 @@ Choose one of three backends:
 
 ```python
 TTS_BACKEND = "say"          # built-in macOS voice (free, no setup)
-TTS_BACKEND = "piper"        # offline neural voice (free, needs Piper installed)
+TTS_BACKEND = "piper"        # offline neural voice (free, needs Piper installed) (ONLY FREE OPTION FOR WINDOWS)
 TTS_BACKEND = "eleven_api"   # cloud neural voice (sounds best, needs API key)
 ```
 
@@ -142,7 +144,7 @@ python3 jarvis_ui.py
 
 This opens the Tkinter window with the orb, chat display, and voice controls. It connects to your OpenClaw session immediately.
 
-### Run the wake listener (terminal mode)
+### Run the wake listener (terminal mode) (ONLY OPTION FOR WINDOWS)
 
 ```bash
 cd /Applications/Building_Jarvis
@@ -164,7 +166,7 @@ python3 wake_listener.py --dry-run         # test without actually launching the
 
 ---
 
-## Keeping the Wake Listener Always Running (LaunchAgent)
+## Keeping the Wake Listener Always Running (LaunchAgent) (ONLY FOR MAC-OS)
 
 You can install the wake listener as a macOS LaunchAgent so it starts automatically at login and stays alive in the background.
 
