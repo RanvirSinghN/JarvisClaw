@@ -301,5 +301,10 @@ rm ~/Library/LaunchAgents/com.jarvis.wake-listener.plist
 
 Please get in touch if you have questions or have ideas on where I should take this next!
 
+## Acknowledgement
+
+- AI tools (gpt 5.5, grok and deepseekv4 pro) were used in my openclaw environment to help design snd put togeyjer the
+ui architecture. 
+
 *Built by Ranvir Narang - upcoming PhD student Mathematical AI @ MARS Lancaster*
 
