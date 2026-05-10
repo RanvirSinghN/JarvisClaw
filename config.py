@@ -6,7 +6,7 @@ bot_name = "Jarvis"
 
 # CLI backend target: internal UUID session id.
 # Replace this with the OpenClaw session ID you want Jarvis to talk to.
-JARVIS_SESSION_ID = "68ef44a5-6577-438c-9820-0b13370e0e07"
+JARVIS_SESSION_ID = "SESSION_ID_HERE"
 
 # Max time to wait for an OpenClaw response before surfacing an error in the UI.
 DEFAULT_TIMEOUT_SECONDS = 120
@@ -86,7 +86,7 @@ STOP_SPEAKING_PHRASE = "stop speaking"
 TTS_BACKEND = "eleven_api"
 
 # ElevenLabs cloud TTS.
-ELEVENLABS_API_KEY = "sk_8e98f00db3c1b47de79c457d4efed89d946642c912997661" #Your ElevenLabs API key here. Get one at https://elevenlabs.com if you want to use the ElevenLabs TTS backend.
+ELEVENLABS_API_KEY = "YOUR_ELEVENLABS_API_KEY_HERE" #Your ElevenLabs API key here. Get one at https://elevenlabs.com if you want to use the ElevenLabs TTS backend.
 ELEVENLABS_VOICE_ID = "j57KDF72L6gxbLk4sOo5"  # British male voice
 ELEVENLABS_MODEL_ID = "eleven_multilingual_v2"
 

@@ -27,7 +27,9 @@ Think of it as the interface layer — **OpenClaw is the brain, Jarvis is the fa
 
 ## Installation
 
+```bash
 git clone https://github.com/ranvirsinghn/jarvisclaw.git
+```
 
 ## Files
 
@@ -88,7 +90,7 @@ ELEVENLABS_VOICE_ID = "..."
 
 All settings live in `config.py`. Here's what you'll want to change:
 
-### 1. Connect to your OpenClaw session
+### 1. Connect to your OpenClaw session (REQUIRED)
 
 ```python
 JARVIS_SESSION_ID = "your-session-uuid-here"
@@ -296,6 +298,8 @@ rm ~/Library/LaunchAgents/com.jarvis.wake-listener.plist
 - Access openclaw through gateway ws to reduce latency
 - Implement JarvisClaw to work with API keys for openai etc
 - Make 3D rendered orb in UI using three.js in embedded webview
+
+Please get in touch if you have questions or have ideas on where I should take this next!
 
 *Built by Ranvir Narang - upcoming PhD student Mathematical AI @ MARS Lancaster*
 
