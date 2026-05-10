@@ -305,7 +305,7 @@ Please get in touch if you have questions or have ideas on where I should take t
 
 ## Acknowledgement
 
-- AI tools (gpt 5.5, grok and deepseekv4 pro) were used in my openclaw environment to help design snd put togeyjer the
+- AI tools (gpt 5.5, grok and deepseekv4 pro) were used in my openclaw environment to help design and craft the
 ui architecture. 
 
 *Built by Ranvir Narang - upcoming PhD student Mathematical AI @ MARS Lancaster*
