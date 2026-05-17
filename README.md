@@ -47,7 +47,8 @@ git clone https://github.com/ranvirsinghn/jarvisclaw.git
 | `wake_listener.py` | Lightweight background process — listens for wake/close phrases |
 | `openclaw_adapter.py` | Bridge between the Python app and OpenClaw (CLI backend) |
 | `speech_input.py` | Microphone recording + Whisper STT |
-| `orb_widget.py` | 3D animated orb canvas widget (orb only, no app logic) |
+| `orb_widget.py` | 2D animated orb canvas widget (orb only, no app logic) |
+| `full3d_orb_widget.py` | 3D animated orb canvas widget (orb only, no app logic) |
 | `config.py` | All settings: wake words, voices, mic, API keys, session ID |
 
 ---
