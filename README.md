@@ -12,6 +12,9 @@ Think of it as the interface layer — **OpenClaw is the brain, Jarvis is the fa
 
 Built for mac-os but can also be run on windows with slightly less functionality.
 
+![Demo screenshot](assets/)
+![Demo screenshot](assets/my-image.png)
+
 ## Architecture
 
 ```
