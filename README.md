@@ -42,7 +42,8 @@ git clone https://github.com/ranvirsinghn/jarvisclaw.git
 
 | File | Role |
 |------|------|
-| `jarvis_ui.py` | Main Tkinter UI — orb, chat, voice controls, inactivity timer |
+| `jarvis_ui.py` | Tkinter UI — fake 3d orb, chat, voice controls, inactivity timer |
+| `jarvis_ui_PyQt.py` | Newer PyQt UI — fully 3d orb, chat, voice controls, inactivity timer |
 | `wake_listener.py` | Lightweight background process — listens for wake/close phrases |
 | `openclaw_adapter.py` | Bridge between the Python app and OpenClaw (CLI backend) |
 | `speech_input.py` | Microphone recording + Whisper STT |
@@ -145,7 +146,7 @@ cd /Applications/Building_Jarvis
 python3 jarvis_ui_PyQt.py
 ```
 
-This opens the Tkinter window with the orb, chat display, and voice controls. It connects to your OpenClaw session immediately.
+This opens the PyQt window with the orb, chat display, and voice controls. It connects to your OpenClaw session immediately.
 
 ### Run the wake listener (terminal mode) (ONLY OPTION FOR WINDOWS)
 
