@@ -1,6 +1,10 @@
 # JarvisClaw — Local Voice Assistant for OpenClaw agent
 
-Jarvis is a local assistant that connects to your OpenClaw agent and gives it voice input, voice output, a 3D animated orb UI, and an always-on wake word listener.
+## Updates
+
+Added new 3D orb rendered with PyQt and vispy, can still use simpler tkinter ui by changing ui script in config.
+
+JarvisClaw is a local assistant that connects to your OpenClaw agent and gives it voice input, voice output, a 3D animated orb UI, and an always-on wake word listener.
 
 Think of it as the interface layer — **OpenClaw is the brain, Jarvis is the face and voice.**
 
@@ -14,7 +18,8 @@ Built for mac-os but can also be run on windows with slightly less functionality
 │                                                         │
 │  ┌──────────────┐    ┌──────────────┐    ┌───────────┐  │
 │  │ wake_listener│    │  jarvis_ui   │    │  OpenClaw │  │
-│  │ (background) │───▶│  (Tkinter)   │───▶│  (gateway)│  │
+│  │ (background) │───▶│  (Tkinter/   │───▶│  (gateway)│  │
+|  |              |    |   PyQt)      |    |           |  |
 │  │              │    │  - orb       │    │           │  │
 │  │ listens for  │    │  - chat      │    │  OpenClaw │  │
 │  │ "hey jarvis" │    │  - mic/STT   │    │  agent    │  │
@@ -62,10 +67,8 @@ Python 3.9+ (the version that ships with macOS or Homebrew).
 ### Python packages
 
 ```bash
-pip install sounddevice scipy numpy
+pip install sounddevice scipy numpy PyQt6 vispy
 ```
-
-These are used by `speech_input.py` for microphone capture and audio processing.
 
 ### Optional: Piper offline TTS
 
@@ -139,7 +142,7 @@ AUTO_LISTEN_ON_LAUNCH = True     # start mic automatically when UI opens
 
 ```bash
 cd /Applications/Building_Jarvis
-python3 jarvis_ui.py
+python3 jarvis_ui_PyQt.py
 ```
 
 This opens the Tkinter window with the orb, chat display, and voice controls. It connects to your OpenClaw session immediately.
@@ -299,7 +302,6 @@ rm ~/Library/LaunchAgents/com.jarvis.wake-listener.plist
 
 - Access openclaw through gateway ws to reduce latency
 - Implement JarvisClaw to work with API keys for openai etc
-- Make 3D rendered orb in UI using three.js in embedded webview
 
 Please get in touch if you have questions or have ideas on where I should take this next!
 
