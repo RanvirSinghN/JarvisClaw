@@ -4,6 +4,8 @@
 
 Added new 3D orb rendered with PyQt and vispy, can still use simpler tkinter ui by changing ui script in config.
 
+## Description
+
 JarvisClaw is a local assistant that connects to your OpenClaw agent and gives it voice input, voice output, a 3D animated orb UI, and an always-on wake word listener.
 
 Think of it as the interface layer — **OpenClaw is the brain, Jarvis is the face and voice.**
