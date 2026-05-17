@@ -72,7 +72,7 @@ These are used by `speech_input.py` for microphone capture and audio processing.
 If you want offline neural TTS (no API key needed), install Piper:
 
 ```bash
-brew install piper
+pip install piper
 # Set TTS_BACKEND = "piper" in config.py
 ```
 
