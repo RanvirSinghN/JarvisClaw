@@ -50,7 +50,7 @@ CLOSE_WORDS = [
 
 # The wake listener starts this UI on demand and can close it again when it hears
 # a close phrase. The wake listener itself keeps running.
-WAKE_UI_SCRIPT = "jarvis_ui.py"
+WAKE_UI_SCRIPT = "jarvis_ui_PyQt.py"
 WAKE_UI_COOLDOWN_SECONDS = 5.0
 WAKE_TERMINAL_MODE = True
 WAKE_MIC_MODE = True
