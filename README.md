@@ -301,7 +301,8 @@ rm ~/Library/LaunchAgents/com.jarvis.wake-listener.plist
 7. ✅ Speech input (microphone → Whisper → OpenClaw)
 8. ✅ 3D orb UI (`orb_widget.py` — idle/listening/thinking/speaking states)
 9. ✅ Inactivity auto-close
-10. LaunchAgent auto-start (functionally working, package dependency tuning)
+10.LaunchAgent auto-start (functionally working, package dependency tuning)
+11.✅ Cleaner more relasitic dynamic 3D orb and ui built with PyQt
 
 ---
 
